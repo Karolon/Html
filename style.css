@@ -57,3 +57,19 @@ table{
 td, th, tr{
   border-style:dotted;
 }
+.input-form1{
+  border-style: none;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+.form1{
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: crimson;
+  width:fit-content;
+}
+.label-form1{
+  font-family: sans-serif;
+}
