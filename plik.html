@@ -9,6 +9,7 @@
         right: 150px;
       }
     </style>
+    <script  src="script.js"></script>
   </head>
 	
 	<body>
@@ -95,18 +96,40 @@
       <li>lista</li>
       <li>lista</li>
     </ul>
-    <form class="form1">
-      <label class="label-form1" for="input-username">Nazwa użytkownika</label><br>
-      <input type="text" id="input-username" max="16" placeholder="hahahahahahh" class="input-form1">
-      <br>
-      <label class="label-form1" for="input-password">Hasło</label><br>
-      <input type="password" id="input-password" min="16" class="input-form1">
-      <br>
-      <label class="label-form1" for="input-number">Numer</label><br>
-      <input type="number" id="input-number" max="16" class="input-form1">
-      <br>
-      <input type="button" value="Wyślij">
-    </form>
+    
+    <center>
+      <form class="form1" action="" onmouseover="kursor()">
+        <h1 class="label-form1">Logowanie</h1>
+        <label class="label-form1" for="input-username">Nazwa użytkownika</label><br>
+        <input type="text" id="input-username" max="16" placeholder="hahahahahahh" class="input-form1">
+        <br>
+        <label class="label-form1" for="input-password">Hasło</label><br>
+        <input type="password" id="input-password" min="16" class="input-form1">
+        <br>
+        <label class="label-form1" for="input-number">Numer</label><br>
+        <input type="number" id="input-number" max="16" class="input-form1">
+        <br>
+        <label>Chce umrzec</label>
+        <input type="checkbox" id="checkbox1" checked="checked">
+        <br>
+        <input type="checkbox" id="checkbox2" onclick="klik()">
+        <br>
+        <input type="radio" class="radiobutton" name="opcje"><label>opcja 1</label>
+        <br>
+        <input type="radio" class="radiobutton" name="opcje"><label>opcja 2</label>
+        
+        <br><br>
+        <label>Wybierz coś</label>
+        <select name="lwys">
+          <option>Kobieta</option>
+          <option>Człowiek</option>
+          <option>kosmita</option>
+          <option>małpa</option>
+        </select>
+        <br><br>
+        <input type="button" id="submitbutton" value="Wyślij" disabled="disabled">  
 
+      </form>
+    </center>
 	</body>
 </html>

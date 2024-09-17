@@ -64,12 +64,17 @@ td, th, tr{
   
 }
 .form1{
-  padding: 10px;
+  display: inline-block;
+  padding: 0px 30px 15px 30px;
   border-style: solid;
   border-radius: 10px;
   border-color: crimson;
   width:fit-content;
+  text-align: center;
 }
 .label-form1{
   font-family: sans-serif;
+}
+.form1:hover{
+  cursor:all-scroll;
 }
