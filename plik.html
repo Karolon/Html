@@ -1,4 +1,4 @@
-<html>
+  <html>
   <head>
     <title>
       DELL
@@ -13,8 +13,7 @@
   </head>
 	
 	<body>
-    <div id="logo">
-    </div>
+    <label id="logo"  onclick="kursor()" ><br><br><br>get a random cursor</label>
     
     <ul style="background-color: darkgreen; padding: 0px 10px 0px 10px;">
       <li class="navbarlink"><a href="#a1-1">Button1</a></li>
@@ -98,7 +97,7 @@
     </ul>
     
     <center>
-      <form class="form1" action="" onmouseover="kursor()">
+      <form class="form1" action="" >
         <h1 class="label-form1">Logowanie</h1>
         <label class="label-form1" for="input-username">Nazwa użytkownika</label><br>
         <input type="text" id="input-username" max="16" placeholder="hahahahahahh" class="input-form1">
@@ -114,20 +113,20 @@
         <br>
         <input type="checkbox" id="checkbox2" onclick="klik()">
         <br>
-        <input type="radio" class="radiobutton" name="opcje"><label>opcja 1</label>
+        <input type="radio" class="radiobutton" name="opcje" id="radio1"><label>opcja 1</label>
         <br>
-        <input type="radio" class="radiobutton" name="opcje"><label>opcja 2</label>
+        <input type="radio" class="radiobutton" name="opcje" id="radio2"><label>opcja 2</label>
         
         <br><br>
         <label>Wybierz coś</label>
-        <select name="lwys">
+        <select name="lwys" id="gender" >
           <option>Kobieta</option>
           <option>Człowiek</option>
           <option>kosmita</option>
           <option>małpa</option>
         </select>
         <br><br>
-        <input type="button" id="submitbutton" value="Wyślij" disabled="disabled">  
+        <input type="button" id="submitbutton" value="Wyślij" disabled="disabled" onclick="form_return()"> 
 
       </form>
     </center>

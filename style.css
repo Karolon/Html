@@ -6,6 +6,7 @@
   position:fixed;
   left: 50%;
   top: -50px;
+  text-align: center;
 }
 #a1-1{
   background-color: aqua;
@@ -74,7 +75,4 @@ td, th, tr{
 }
 .label-form1{
   font-family: sans-serif;
-}
-.form1:hover{
-  cursor:all-scroll;
 }
