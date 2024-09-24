@@ -4,16 +4,35 @@
       DELL
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css">
     <style>
       #text{
         right: 150px;
       }
     </style>
     <script  src="script.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script  src="https://cdn.datatables.net/2.1.7/js/dataTables.js "></script>
+    <script type="text/javascript">
+	
+      $(document).ready(function(){ $('#tabela').DataTable(); });
+    </script>
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      }
+    
+      setTimeout(playAudio, 3000);
+      function pauseAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.pause();
+      }
+    </script>
   </head>
 	
-	<body>
-    <label id="logo"  onclick="kursor()" ><br><br><br>get a random cursor</label>
+	<body onload  ="playAudio()">
+    <label id="logo"  onclick="kursor()"><br><br><br>get a random cursor</label>
     
     <ul style="background-color: darkgreen; padding: 0px 10px 0px 10px;">
       <li class="navbarlink"><a href="#a1-1">Button1</a></li>
@@ -36,7 +55,7 @@
         </div>
       </div>
 
-      <audio controls>
+      <audio controls autoplay id="myAudio">
         <source src="ttd-music.mp3" type="audio/mpeg">
       </audio>
 
@@ -45,38 +64,35 @@
       </p>
     </div>
 
-    <table width =180>
-      <tr>
-        <th>Id</th>
-        <th>Imie</th>
-        <th>Nazwisko</th>
-        <th>Wiek</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>ime</td>
-        <td>dwa</td>
-        <td>13</td>
-      </tr>
-        <td>2</td>
-        <td>ef</td>
-        <td>fe</td>
-        <td>13</td>
-      <tr>
-
-      </tr>
-      <tr>
-        <td>2</td>
-        <td colspan="2">imie fwwf</td>
-        <td>13</td>
-      </tr>
-      <tr>
-
-      </tr>
-      <tr>
-
-      </tr>
+    <table width =180 id="tabela" class="'display">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Imie</th>
+          <th>Nazwisko</th>
+          <th>Wiek</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>ime</td>
+          <td>dwa</td>
+          <td>13</td>
+        </tr>
+          <td>2</td>
+          <td>ef</td>
+          <td>fe</td>
+          <td>13</td>
+<!--        <tr>
+          <td>2</td>
+          <td colspan="2">imie fwwf</td>
+          <td>13</td>
+        </tr>-->
+      </tbody>
     </table>
+
+    <div id="niezlapieszmnie" onmouseover="moveit()"></div>
 
     <img src="dell-logo.png" width="500">
 

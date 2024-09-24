@@ -14,7 +14,10 @@ function  kursor(){
   console.log('dziala');
   const cursors = ['all-scroll','alias','auto','cell','context-menu','col-resize'];
   const cursor = Math.floor(Math.random() * cursors.length);
+  let logo = document.getElementById('logo')
   document.body.style.cursor = cursors[cursor];
+  logo.style.cursor = cursors[cursor];
+
 }
 function form_return(){
   let _gender = document.getElementById('gender').value;
@@ -27,4 +30,9 @@ function form_return(){
   console.log(_checkbox2);
   console.log(radiobut1);
   console.log(radiobut2);
+}
+function moveit(){
+  let box = document.getElementById('niezlapieszmnie');
+  box.style.left = Math.floor(Math.random() * 95)+'%'
+  box.style.top = Math.floor(Math.random() * 95)+'%'
 }

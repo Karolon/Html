@@ -76,3 +76,11 @@ td, th, tr{
 .label-form1{
   font-family: sans-serif;
 }
+#niezlapieszmnie{
+  background-color: red;
+  border-radius: 20px;
+  width: 200px;
+  height: 100px;
+  z-index: 9;
+  position: absolute  ;
+}
